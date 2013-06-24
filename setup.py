@@ -21,16 +21,6 @@ CLASSIFIERS = [
     'Topic :: Internet :: WWW/HTTP :: Session',
 ]
 
-package_data_globs = (
-    'cookielaw/templates/cookielaw/*.html',
-    'cookielaw/static/cookielaw/*/*',
-    'cookielaw/locale/*/*/*'
-)
-
-package_data = []
-for f in chain(*map(glob, package_data_globs)):
-    package_data.append(f.split('/', 1)[1])
-
 setup(
     author='Piotr Kilczuk',
     author_email='piotr@tymaszweb.pl',
@@ -50,8 +40,7 @@ setup(
         'selenium>=2.32.0',
     ],
     packages=find_packages(),
-    package_data={'cookielaw': package_data},
-    include_package_data=False,
     zip_safe = False,
     test_suite = 'runtests.main',
+    include_package_data = True,   
 )
