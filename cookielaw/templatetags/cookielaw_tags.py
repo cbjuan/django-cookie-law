@@ -1,4 +1,5 @@
-from classytags.helpers import InclusionTag
+# -*- coding: utf-8 -*-
+
 from django import template
 from django.template.loader import render_to_string
 
@@ -6,18 +7,9 @@ from django.template.loader import render_to_string
 register = template.Library()
 
 
-class CookielawBanner(InclusionTag):
-    """
-    Displays cookie law banner only if user has not dismissed it yet.
-    """
+@register.simple_tag(takes_context=True)
+def cookielaw_banner(context):
+    if context['request'].COOKIES.get('cookielaw_accepted', False):
+        return ''
+    return render_to_string('cookielaw/banner.html', context)
 
-    template = 'cookielaw/banner.html'
-
-    def render_tag(self, context, **kwargs):
-        template = self.get_template(context, **kwargs)
-        if context['request'].COOKIES.get('cookielaw_accepted', False):
-            return ''
-        data = self.get_context(context, **kwargs)
-        return render_to_string(template, data)
-
-register.tag(CookielawBanner)
