@@ -33,7 +33,6 @@ setup(
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     install_requires=[
-        'Django>=1.2',
     ],
     test_require=[
         'selenium>=2.32.0',
