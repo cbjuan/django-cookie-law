@@ -7,9 +7,9 @@ from django.template.loader import render_to_string
 register = template.Library()
 
 
-@register.simple_tag(takes_context=True)
-def cookielaw_banner(context):
-    if context['request'].COOKIES.get('cookielaw_accepted', False):
+@register.simple_tag
+def cookielaw_banner(request):
+    if request.COOKIES.get('cookielaw_accepted', False):
         return ''
-    return render_to_string('cookielaw/banner.html', context)
+    return render_to_string('cookielaw/banner.html', {})
 
