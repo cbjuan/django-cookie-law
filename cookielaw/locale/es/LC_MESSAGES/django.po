@@ -18,7 +18,7 @@ msgstr ""
 
 #: templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
-msgstr "Renuncia de responsabilidad de cookies"
+msgstr " "
 
 #: templates/cookielaw/banner.html:7
 msgid "COOKIE_INFO_OK"
@@ -27,9 +27,7 @@ msgstr "Acepto"
 #: templates/cookielaw/banner.html:8
 msgid "COOKIE_INFO_PARA"
 msgstr ""
-"Este sitio web guarda pequeños fragmentos de información (cookies) en tu "
-"dispositivo con el fin de ofrecer un mejor contenido y para fines "
-"estadísticos. Usted puede desactivar el uso de cookies modificando la "
-"configuración de su navegador. Al navegar por nuestro sitio web sin cambiar "
-"la configuración del navegador usted nos está autorizando a almacenar esa "
-"información en su dispositivo."
+"Utilizamos cookies propias y de terceros para ofrecer nuestros servicios, "
+"y recoger información estadística. Al continuar navegando entendemos "
+"que lo acepta. Puede encontrar información sobre cómo borrar las cookies de "
+"su navegador en Google"
