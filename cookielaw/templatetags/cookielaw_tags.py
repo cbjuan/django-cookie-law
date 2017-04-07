@@ -3,9 +3,9 @@
 from django import template
 from django.template.loader import render_to_string
 
+import django
 
 register = template.Library()
-
 
 @register.simple_tag(takes_context=True)
 def cookielaw_banner(context):
