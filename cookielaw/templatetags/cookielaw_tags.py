@@ -22,5 +22,5 @@ def cookielaw_banner(context):
             return render_to_string(
                 'cookielaw/banner.html', data, context_instance=context
             )
-        else:
-            return render_to_string('cookielaw/banner.html', data, request)
+    else:
+        return render_to_string('cookielaw/banner.html', data, request)
