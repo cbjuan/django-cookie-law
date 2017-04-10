@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-03 09:19+0200\n"
+"POT-Creation-Date: 2015-07-17 14:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +19,18 @@ msgstr ""
 
 #: templates/cookielaw/banner.html:5
 msgid "COOKIE_INFO_HEADER"
-msgstr "Aviso de cookies"
+msgstr "Cookie melding"
 
 #: templates/cookielaw/banner.html:7
 msgid "COOKIE_INFO_OK"
-msgstr "Estoy de acuerdo"
+msgstr "Ik ga akkoord"
 
 #: templates/cookielaw/banner.html:8
 msgid "COOKIE_INFO_PARA"
 msgstr ""
-"Este sitio web guarda pequeños fragmentos de información (cookies) en su dispositivo con la finalidad de ofrecer un "
-"mejor contenido y para finalidades estadísticas. Usted puede desactivar el uso de cookies modificando la "
-"configuración de su navegador. Navegar por nuestro sitio web sin cambiar la configuración del navegador hace que "
-"usted nos esté autorizando a guardar esta información en su dispositivo."
+"Tijdens het surfen op het internet worden uw voorkeuren onthouden door middel van cookies."
+"Cookies zijn kleine tekstbestanden die door een internetpagina op een pc, tablet of mobiele telefoon worden geplaatst."
+"Cookies worden gebruikt om uw gebruikerservaring te verbeteren door het anoniem monitoren van webbezoek, "
+"het delen van informatie op social media mogelijk te maken, de effectiviteit van online marketingcampagnes te"
+"meten en om online advertenties aan te passen aan uw interesses."
+"Door te surfen op deze website gaat u akkoord met het plaatsen van cookies."

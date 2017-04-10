@@ -21,6 +21,16 @@ CLASSIFIERS = [
     'Topic :: Internet :: WWW/HTTP :: Session',
 ]
 
+package_data_globs = (
+    'cookielaw/templates/cookielaw/*.html',
+    'cookielaw/static/cookielaw/*/*',
+    'cookielaw/locale/*/*/*'
+)
+
+package_data = []
+for f in chain(*map(glob, package_data_globs)):
+    package_data.append(f.split('/', 1)[1])
+
 setup(
     author='Piotr Kilczuk',
     author_email='piotr@tymaszweb.pl',
@@ -33,12 +43,15 @@ setup(
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     install_requires=[
+        'Django>=1.2',
+        'django-classy-tags>=0.3.0',
     ],
-    test_require=[
-        'selenium>=2.32.0',
+    tests_require=[
+        'selenium==3.0.1',
     ],
     packages=find_packages(),
-    zip_safe = False,
-    test_suite = 'runtests.main',
-    include_package_data = True,   
+    package_data={'cookielaw': package_data},
+    include_package_data=False,
+    zip_safe=False,
+    test_suite='runtests.main',
 )

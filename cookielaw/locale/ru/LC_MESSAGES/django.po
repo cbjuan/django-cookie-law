@@ -8,30 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-04 10:36+0100\n"
+"POT-Creation-Date: 2016-04-08 10:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Netsach SAS for MSF <contact@netsach.com>\n"
+"Language-Team: Netsach SAS <contact@netsach.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: tests.py:24 templates/cookielaw/banner.html:5
+#: templates/cookielaw/banner.html:5 tests.py:24
 msgid "COOKIE_INFO_HEADER"
-msgstr "Cookies disclaimer"
+msgstr "Соглашение об использовании cookie-файлов"
 
-#: tests.py:25 templates/cookielaw/banner.html:8
-msgid "COOKIE_INFO_PARA"
-msgstr ""
-"Our site saves small pieces of text information (cookies) on your device in "
-"order to deliver better content and for statistical purposes. You can "
-"disable the usage of cookies by changing the settings of your browser. By "
-"browsing our website without changing the browser settings you grant us "
-"permission to store that information on your device."
-
-#: tests.py:26 templates/cookielaw/banner.html:7
+#: templates/cookielaw/banner.html:7 tests.py:26
 msgid "COOKIE_INFO_OK"
-msgstr "I agree"
+msgstr "Принимаю"
+
+#: templates/cookielaw/banner.html:8 tests.py:25
+msgid "COOKIE_INFO_PARA"
+msgstr "Наш сайт сохранит анонимные идентификаторы (cookie-файлы) на ваше устройство. Это способствует персонализации контента, а также используется в статистических целях. Вы можете отключить использование cookie-файлов, изменив настройки Вашего браузера. Пользуясь этим сайтом при настройках браузера по умолчанию, вы соглашаетесь на использование cookie-файлов и сохранение информации на Вашем устройстве."

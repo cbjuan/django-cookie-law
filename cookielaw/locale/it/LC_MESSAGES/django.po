@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-04 10:35+0100\n"
+"POT-Creation-Date: 2015-06-03 16:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: tests.py:24 templates/cookielaw/banner.html:5
+#: templates/cookielaw/banner.html:5 tests.py:24
 msgid "COOKIE_INFO_HEADER"
-msgstr "Cookies disclaimer"
+msgstr "Informativa e consenso per l'uso dei cookie"
 
-#: tests.py:25 templates/cookielaw/banner.html:8
+#: templates/cookielaw/banner.html:7 tests.py:26
+msgid "COOKIE_INFO_OK"
+msgstr "Accetto"
+
+#: templates/cookielaw/banner.html:8 tests.py:25
 msgid "COOKIE_INFO_PARA"
 msgstr ""
-"Our site saves small pieces of text information (cookies) on your device in "
-"order to deliver better content and for statistical purposes. You can "
-"disable the usage of cookies by changing the settings of your browser. By "
-"browsing our website without changing the browser settings you grant us "
-"permission to store that information on your device."
-
-#: tests.py:26 templates/cookielaw/banner.html:7
-msgid "COOKIE_INFO_OK"
-msgstr "I agree"
+"Il nostro sito salva piccoli pezzi di informazioni (cookie) sul dispositivo, "
+"al fine di fornire contenuti migliori e per scopi statistici. È possibile "
+"disattivare l'utilizzo di cookies modificando le impostazioni del tuo browser. "
+"Continuando la navigazione si acconsente all'utilizzo dei cookie."
