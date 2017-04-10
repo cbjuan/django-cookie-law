@@ -8,7 +8,6 @@ from django.template.loader import render_to_string
 
 register = template.Library()
 
-
 class CookielawBanner(InclusionTag):
     """
     Displays cookie law banner only if user has not dismissed it yet.
@@ -34,3 +33,4 @@ class CookielawBanner(InclusionTag):
             return render_to_string(template_filename, data, context.request)
 
 register.tag(CookielawBanner)
+
